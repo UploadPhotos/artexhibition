@@ -22,6 +22,9 @@
       margin: 0;
       padding: 0;
     }
+    .swiper-button-next, .swiper-button-prev{
+      top: 10%;
+    }
     .swiper-container {
       width: 100%;
       height: 100%;
@@ -32,10 +35,10 @@
       background: #fff;
 
       /* Center slide text vertically */
-      display: -webkit-box;
+      /* display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
-      display: flex;
+      display: flex; */
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       -webkit-justify-content: center;
@@ -48,6 +51,7 @@
   </style>
 </head>
 <body>
+  <h1>宇宙探索区</h1>
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -56,7 +60,20 @@
             document.write("<div class=\"swiper-slide\">Slide "+i+"</div>");
         }
       </script> -->
-      <div class="swiper-slide"><img src="image/1.png" /></div>
+      <div class="swiper-slide">
+        <div>
+          <img src="image/1.png" />
+        </div>
+        <div>
+          <audio src="audio/music1.mp3" controls>
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+        <div class="introduce">
+          <p class="title">三维滚环</p>
+          <p class="content">三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环三维滚环</p>
+        </div>
+      </div>
       <div class="swiper-slide"><img src="image/2.png" /></div>
       <div class="swiper-slide"><img src="image/3.png" /></div>
       <div class="swiper-slide"><img src="image/4.png" /></div>
