@@ -48,6 +48,10 @@
       -webkit-align-items: center;
       align-items: center;
     }
+    .playIcon{
+      width: 50px;
+      height: 50px;
+    }
   </style>
 </head>
 <body>
@@ -65,9 +69,10 @@
           <img src="image/1.png" />
         </div>
         <div>
-          <audio src="audio/music1.mp3" controls>
+          <img src="image/play.jpg" id="playAudio" class="playIcon">
+          <!-- <audio src="audio/music1.mp3" controls>
             Your browser does not support the audio tag.
-          </audio>
+          </audio> -->
         </div>
         <div class="introduce">
           <p class="title">三维滚环</p>
@@ -94,12 +99,18 @@
 
   <!-- Initialize Swiper -->
   <script>
+    var musicPlay = new Audio('audio/music1.mp3');
     var swiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
     });
+    var playAudio = document.getElementById("playAudio");
+		playAudio.onclick=function(){
+			alert("hello world");
+      musicPlay.play();
+		}
   </script>
 </body>
 </html>
